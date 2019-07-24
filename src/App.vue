@@ -1,20 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <img id="logo" alt="MapApp logo" src="./assets/logo2.png">
+    <Mapper/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from './components/HelloWorld.vue';
+import Mapper from './components/Mapper.vue';
 
 @Component({
   components: {
-    HelloWorld,
+    Mapper,
   },
 })
 export default class App extends Vue {}
+
 </script>
 
 <style>
@@ -25,5 +26,9 @@ export default class App extends Vue {}
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#logo{
+  height:100px;
 }
 </style>
